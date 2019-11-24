@@ -24,17 +24,17 @@ module.exports = function(environment) {
     },
 
     blog: {
-      title: 'empress-blog',
-      description: 'Static Blog System - Built with Ember',
-      coverImage: '/images/blog-cover.jpg',
+      title: 'Stephanie Ann Siriban Rodriguez',
+      description: 'One Cool Potato',
+      coverImage: '/images/boss.jpg',
 
       navigation: [{
         label: 'Home',
         route: 'index'
       }, {
-        label: 'Built by Chris Manson',
+        label: 'Built with Love',
         route: 'page',
-        id: 'chris-manson'
+        id: 'built-with'
       }]
     },
 
