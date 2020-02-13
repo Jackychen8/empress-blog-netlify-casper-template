@@ -1,5 +1,5 @@
 # siriban.com
-Quickly put up a website with empress-blog Netlify Casper Template
+A quickly set up website for the Siriban Family made possible by empress-blog Netlify Casper Template
 
 ### empress-blog Netlify Casper Template
 
