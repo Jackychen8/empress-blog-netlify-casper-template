@@ -1,11 +1,11 @@
-"use strict";
+'use strict';
 
-module.exports = function (environment) {
+module.exports = function(environment) {
   let ENV = {
-    modulePrefix: "empress-blog-casper",
+    modulePrefix: 'empress-blog-casper',
     environment,
-    rootURL: "/",
-    locationType: "auto",
+    rootURL: '/',
+    locationType: 'auto',
 
     EmberENV: {
       FEATURES: {
@@ -14,8 +14,8 @@ module.exports = function (environment) {
       },
       EXTEND_PROTOTYPES: {
         // Prevent Ember Data from overriding Date.parse.
-        Date: false,
-      },
+        Date: false
+      }
     },
 
     APP: {
@@ -24,35 +24,32 @@ module.exports = function (environment) {
     },
 
     blog: {
-      title: "Stephanie Ann Siriban Rodriguez",
-      description: "One Cool Potato",
-      coverImage: "/images/boss.jpg",
+      title: 'Stephanie Ann Siriban Rodriguez',
+      description: 'One Cool Potato',
+      coverImage: '/images/boss.jpg',
 
-      navigation: [
-        {
-          label: "Home",
-          route: "index",
-        },
-        {
-          label: "Meet The Family",
-          route: "page",
-          id: "built-with",
-        },
-      ],
+      navigation: [{
+        label: 'Home',
+        route: 'index'
+      }, {
+        label: 'Built with Love',
+        route: 'page',
+        id: 'built-with'
+      }]
     },
 
-    "responsive-image": {
-      sourceDir: "images",
-      destinationDir: "responsive-images",
+    'responsive-image': {
+      sourceDir: 'images',
+      destinationDir: 'responsive-images',
       quality: 80,
       supportedWidths: [2000, 1000, 600, 300],
       removeSourceDir: false,
       justCopy: false,
-      extensions: ["jpg", "jpeg", "png", "gif"],
-    },
+      extensions: ['jpg', 'jpeg', 'png', 'gif']
+    }
   };
 
-  if (environment === "development") {
+  if (environment === 'development') {
     // ENV.APP.LOG_RESOLVER = true;
     // ENV.APP.LOG_ACTIVE_GENERATION = true;
     // ENV.APP.LOG_TRANSITIONS = true;
@@ -60,19 +57,19 @@ module.exports = function (environment) {
     // ENV.APP.LOG_VIEW_LOOKUPS = true;
   }
 
-  if (environment === "test") {
+  if (environment === 'test') {
     // Testem prefers this...
-    ENV.locationType = "none";
+    ENV.locationType = 'none';
 
     // keep test console output quieter
     ENV.APP.LOG_ACTIVE_GENERATION = false;
     ENV.APP.LOG_VIEW_LOOKUPS = false;
 
-    ENV.APP.rootElement = "#ember-testing";
+    ENV.APP.rootElement = '#ember-testing';
     ENV.APP.autoboot = false;
   }
 
-  if (environment === "production") {
+  if (environment === 'production') {
     // here you can enable a production-specific feature
   }
 
